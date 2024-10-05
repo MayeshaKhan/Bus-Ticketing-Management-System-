@@ -1,0 +1,244 @@
+.header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin:0;
+}
+
+
+nav {
+    background-color: grey;
+    overflow: hidden;
+    margin:0;
+    text-align: center;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.nav-links {
+    display: inline-block;
+}
+
+.logout-link {
+    background-color: #d9534f;
+    
+    color: white;
+    border-radius: 5px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    border-bottom: 2px solid #ddd;
+}
+
+main {
+    min-height: 80vh;
+    padding: 20px;
+    background-color: #f4f4f4;
+   
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+pre {
+    font-family: inherit;
+    white-space: pre-wrap;
+}
+
+form {
+    width: 40%;
+    margin: 20px auto;
+}
+
+.ticket-form{
+    width: 80%;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+legend {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+
+h1,
+h2 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.bus {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 5px;
+
+}
+
+.checkbox-seat {
+    display: none;
+}
+
+.seat-label {
+
+    width: 40px;
+
+    height: 40px;
+
+    border: 1px solid #333;
+
+    margin: 2px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+input[type="checkbox"]:checked+label,
+.seat-label-choosed {
+
+    background-color: green;
+    color: white;
+
+}
+
+
+input[type=checkbox][disabled]+label,
+.seat-label-booked {
+    background-color: black;
+    color: gray;
+    cursor: not-allowed;
+}
+
